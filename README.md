@@ -160,6 +160,6 @@ model.eval()
 
 ## References
 
-- Willett, F.R., Kunz, E.M., Fan, C., et al. (2023). *A high-performance speech neuroprosthesis*. Nature, 620, 1031-1036. https://doi.org/10.1038/s41586-023-06377-x
+- [A high-performance speech neuroprosthesis](https://doi.org/10.1038/s41586-023-06377-x)
 - PyTorch decoder: [cffan/neural_seq_decoder](https://github.com/cffan/neural_seq_decoder)
 - Dataset: [Dryad doi:10.5061/dryad.x69p8czpq](https://datadryad.org/stash/dataset/doi:10.5061/dryad.x69p8czpq)
