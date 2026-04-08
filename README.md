@@ -68,7 +68,7 @@ CTC Loss (training) / Greedy Decode (inference)
 
 ## This Implementation
 
-The original codebase targets a Stanford HPC cluster running the full pipeline including Kaldi beam search — the primary compute bottleneck at scale. Isolating Stage 1 and making two targeted adjustments enables training on a single consumer GPU:
+The original codebase targets a HPC cluster running the full pipeline including Kaldi beam search - the primary compute bottleneck at scale. This implementation isolates Stage 1 from the full Kaldi pipeline and making two targeted adjustments enables training on a single consumer GPU:
 
 | Hyperparameter | Original | This Repo | Notes |
 |---|---|---|---|
@@ -109,8 +109,7 @@ speech-bci-decoder/
 │       ├── dataset.py                 # SpeechDataset: loads pickle, returns tensors
 │       └── augmentations.py           # GaussianSmoothing, WhiteNoise, MeanDriftNoise
 ├── notebooks/
-│   └── formatCompetitionData.ipynb    # Step 1: converts raw .mat files to pickle
-├── setup.cfg
+│   └── formatCompetitionData.ipynb    # converts raw .mat files to pickle
 └── README.md
 ```
 
