@@ -1,4 +1,4 @@
-# speech-bci-decoder
+# Speech BCI Decoder
 
 A PyTorch reimplementation of the intracortical GRU-based phoneme decoder from [Willett et al. (2023)](https://www.nature.com/articles/s41586-023-06377-x), restructured to run on a single consumer GPU. Decodes multichannel neural population activity into phoneme sequences using a bidirectional GRU trained with Connectionist Temporal Classification (CTC).
 
